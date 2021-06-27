@@ -1,3 +1,9 @@
+var searchButton = document.querySelector("#search-button")
+var searchText = document.querySelector("#search-text") 
+var searchTextAllergy = document.querySelector("#search-text_allergy") 
+var apiKey = "b83112bb69ba4c30bbb2e07f26f43390" 
+var archive= JSON.parse(window.localStorage.getItem("archive"))|| []; 
+
 function getRecipe(event) {
     event.preventDefault()
     console.log(searchText.value)
